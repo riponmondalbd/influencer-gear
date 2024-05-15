@@ -2,6 +2,66 @@
 /* poppins google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Poppins", sans-serif;
+}
+
+.primary-color {
+    color: #3A3A3A;
+}
+
+.top-header {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.primary-description {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* header styles */
+.header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header-content-container {
+    margin: 87px 120px 50px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-content-container ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header-content-container li {
+    list-style: none;
+}
+
+.header-content-container a {
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .header-content-container {
+        flex-direction: column;
+        margin: 35px 22px;
+    }
+
+    .header-content-container ul {
+        padding: 0;
+    }
 }
