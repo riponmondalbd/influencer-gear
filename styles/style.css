@@ -37,7 +37,6 @@ main {
     font-size: 16px;
     font-weight: 700;
     padding: 10px 24px;
-    border-radius: 41px;
     background-color: #E02C6D;
     border: none;
     color: #fff;
@@ -91,6 +90,10 @@ main {
 .banner-left-description {
     width: 505px;
     margin: 16px 0;
+}
+
+.prebook-btn {
+    border-radius: 41px;
 }
 
 /* main section styles */
@@ -177,6 +180,27 @@ main {
     margin-top: 50px;
 }
 
+/* feature product style */
+.featured-product-container {
+    display: flex;
+    gap: 96px;
+    margin-top: 100px;
+}
+
+.featured-content>h3 {
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.featured-content>p {
+    width: 500px;
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 16px 0;
+}
+
 /* responsive media query */
 @media screen and (max-width:576px) {
     .header-content-container {
@@ -230,5 +254,21 @@ main {
 
     .single-collection {
         margin: 0 20px;
+    }
+
+    .featured-product-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+        margin: 30px 0;
+    }
+
+    .featured-content>p {
+        width: 100%;
+    }
+
+    .join-btn {
+        margin-top: 40px;
+        margin: 0 auto;
     }
 }
